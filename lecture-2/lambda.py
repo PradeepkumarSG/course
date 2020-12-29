@@ -4,7 +4,9 @@ people = [{"Name":"Vasu", "country":"Singapore"},
   {"Name":"Bharathi", "country":"india"}
 ]
 
-people.sort()
+#lambda is an one line function 
+# syntax-(key:lambda input : output)
+people.sort(key=lambda person: person["Name"])
 
 print(people)
 
